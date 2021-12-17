@@ -26,9 +26,9 @@ def patient_called(service_name,hospital):
 reasonable_waiting_time = 5
 
 services = []
-services.append(classes.service("dentist"))
-services.append(classes.service("ophtalmologue"))
-h1 = classes.hopital("hopital 1", services)
+h1 = classes.hopital("hopital 1")
+h1.add_service(classes.service("dentist"))
+h1.add_service(classes.service("ophtalmologue"))
 
 
 reserve("dentist",h1)

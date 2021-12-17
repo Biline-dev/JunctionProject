@@ -1,20 +1,29 @@
 
 class hopital:
-    def __init__(self,name, list_services,emergency_id="11",patient_id=1):
+    def __init__(self, name, emergency_id="11",patient_id=1):
         self.name=name
-        self.list_services=list_services
+        self.list_services=[]
         self.list_urgence=[]
         self.salles_urgence=[]
         self.emergency_id = emergency_id
         self.patient_id = patient_id
 
     def add_service(self,service):
-        #add new services
+        self.list_services.append(service)
         pass
 
     def remove_service(self,service_name):
-        #remove service
-        pass
+        service = search_service(self,service_name)
+        if not service:
+            print("Service %s doesn't exist" %(service))
+            return
+        self.list_services.remove(service)
+
+    def search_service(self,service_name):
+        for service in self.list_services:
+            if service.name == service_name:
+                return service
+        return None
 
     #add urgence functions here
     def new_emergency_patient(self):
