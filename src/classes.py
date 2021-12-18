@@ -1,10 +1,11 @@
 
 class hopital:
-    def __init__(self, name, list_services=[] ,emergency_id="11",patient_id=1):
+    def __init__(self, name, position, list_services=None, list_urgence = None ,salles_urgence = None ,emergency_id="11",patient_id=1):
         self.name=name
+        self.position = position
         self.list_services= list_services
-        self.list_urgence=[]
-        self.salles_urgence=[]
+        self.list_urgence= list_urgence
+        self.salles_urgence= salles_urgence
         self.emergency_id = emergency_id
         self.patient_id = patient_id
 
@@ -48,7 +49,7 @@ class service :
         self.service_index = str(int(service.service_index)+1)
         service.service_index = self.service_index
 
-            #checkin functions here
+        #checkin functions here
     def check_in(self):
         patient_id = int(self.service_index + str(self.id))
         self.list_checkins.append(patient_id)
@@ -85,7 +86,7 @@ class pharmacie:
 
 
 class medicament:
-    def __init__(self,name,dose,quantity):
+    def __init__(self,name,dose,quantity= 0):
         self.name=name
         self.dose=dose
         self.quantity=quantity

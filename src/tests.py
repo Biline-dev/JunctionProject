@@ -27,9 +27,9 @@ def patient_called(service_name,hospital):
 reasonable_waiting_time = 2
 
 services = []
-h1 = classes.hopital("Hospital Aïn Naadja")
-h2 = classes.hopital("Hospital Mohamad Lamine")
-h3 = classes.hopital("Hospital Salim Zmirli")
+h1 = classes.hopital("Hospital Aïn Naadja",[150,50],[],[],[])
+h2 = classes.hopital("Hospital Mohamad Lamine",[15,150],[],[],[])
+h3 = classes.hopital("Hospital Salim Zmirli",[100,75],[],[],[])
 h1.add_service(classes.service("dentist"))
 h1.add_service(classes.service("ophtalmologue"))
 h2.add_service(classes.service("ophtalmologue"))
