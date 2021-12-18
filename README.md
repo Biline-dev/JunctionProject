@@ -70,4 +70,5 @@ By improving the quality of service that the patients revice you are reducing th
 
 The impact of our product will range from highly improving the service quality for the customer, reducing the stress of the employees, making the hospital more organized and clean, to even saving the life of emergency patients by redirecting them to nearby hospitals. Which will make your services not only more attractive than others but you will also be able to handle more customers than usual. 
 
-[![Generic badge](https://img.shields.io/badge/Made%20With-Love-FF1493.svg)](https://shields.io/) Team Junctioner
+[![Generic badge](https://img.shields.io/badge/Made%20With-Love-FF1493.svg)](https://shields.io/)
+*Team Junctioner*
