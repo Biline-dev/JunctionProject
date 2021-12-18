@@ -57,6 +57,8 @@ as it will improve the quality of service for the customers which is very import
 
 By improving the quality of service that the patients revice you are reducing the stress put on the staff of the hospital in many different ways and thus improve the quality of service that these employees provide.
 
+### Business Model
+![Game splash screen](https://www.pixenli.com/image/91ZwCofa)
 
 ### You may ask…
 ### What makes your app better in interactive kiosks than a mobile app?
